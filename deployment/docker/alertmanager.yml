@@ -1,5 +1,10 @@
 route:
-  receiver: blackhole
+  receiver: telegram
 
 receivers:
-  - name: blackhole
+- name: 'telegram'
+  telegram_configs:
+  - bot_token:
+    api_url: https://api.telegram.org
+    chat_id: -1001961011447
+    parse_mode: ''
